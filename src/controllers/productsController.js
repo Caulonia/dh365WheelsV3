@@ -13,9 +13,7 @@ const productsController = {
                 miAuto  =  auto ;
             }
         } ) ;
-        res.render('products/productDetail', {miAuto: miAuto});
-
-    } ,
+    
    
     carrito: (req, res) =>{
         res.render('products/productCart')
@@ -35,6 +33,9 @@ const productsController = {
     eliminar: (req, res)=>{
         res.render('products/productDelete')
     },
+    res.render('products/productDetail', {miAuto: miAuto});
+
+    } ,
 }
 
 module.exports = productsController;
